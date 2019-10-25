@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="AzureCloudService2" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="6" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="WebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="BlobEndpoint=https://xhst2.blob.core.chinacloudapi.cn/;QueueEndpoint=https://xhst2.queue.core.chinacloudapi.cn/;TableEndpoint=https://xhst2.table.core.chinacloudapi.cn/;AccountName=xhst2;AccountKey=$(_xhst2.key_)" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="xiehs" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIB0gYJKoZIhvcNAQcDoIIBwzCCAb8CAQAxggF7MIIBdwIBADBfMEsxSTBHBgoJkiaJk/IsZAEZFjlXaW5kb3dzIEF6dXJlIFRvb2xzIEVuY3J5cHRpb24gQ2VydGlmaWNhdGUgZm9yIEV4dGVuc2lvbnMCEBRenFAsVsqYRxG6HQS6GjQwDQYJKoZIhvcNAQEBBQAEggEAYcnUzljmkd8gCeTnxx3AkcJn8bcRmSJ05aPcFb2m3ozKDXsxiEI9mhTAt9bT6hAnLv+a3njy3qaq0FjJUVvKBCRvVnPnu0CsR7zviNqTuS5U3lJgfubPjng7D9A0lMeF88mZw1CCIUwTpE43KS5ebaLDUNYD82fngEhhhYpLgLnDg7t/gqg5vBMrmr9csgXYLWYXk2cFne6i7cUyftMho8zgRr8v+eexMdkZEkWKeHR7ha8rex8pUUmmAbwMYI9X7d8lcvoDBl/3nkKqu6gyy2BCzEsS5Cm5KvTR6cpfiRZ3x24IGVuexJmu621QKrfe9EzT8OjCnVgX78MOxpsDajA7BgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECItOQEQ3v5xIgBhAbVd3be7ddpIiMEdYgBSoKlUM1phtNyc=" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2020-10-23T23:59:59.0000000+08:00" />
+      <Setting name="StorageConnectionString" value="BlobEndpoint=https://xhst2.blob.core.chinacloudapi.cn/;QueueEndpoint=https://xhst2.queue.core.chinacloudapi.cn/;TableEndpoint=https://xhst2.table.core.chinacloudapi.cn/;AccountName=xhst2;AccountKey=o0fZ2FQlmvFXC+V7h/VRIAl3ORdeU4v82zoLJx7Eq2chlqk8gaSPQ+NvKQ/DZq0Qy3iSwIXjHuUbdEvkUoX0yQ==" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="E5DA47B7BC4FA41340E2425FDB47A33D9FFF6886" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="WorkerRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="BlobEndpoint=https://xhst2.blob.core.chinacloudapi.cn/;QueueEndpoint=https://xhst2.queue.core.chinacloudapi.cn/;TableEndpoint=https://xhst2.table.core.chinacloudapi.cn/;AccountName=xhst2;AccountKey=$(_xhst2.key_)" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="xiehs" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIB0gYJKoZIhvcNAQcDoIIBwzCCAb8CAQAxggF7MIIBdwIBADBfMEsxSTBHBgoJkiaJk/IsZAEZFjlXaW5kb3dzIEF6dXJlIFRvb2xzIEVuY3J5cHRpb24gQ2VydGlmaWNhdGUgZm9yIEV4dGVuc2lvbnMCEBRenFAsVsqYRxG6HQS6GjQwDQYJKoZIhvcNAQEBBQAEggEAYcnUzljmkd8gCeTnxx3AkcJn8bcRmSJ05aPcFb2m3ozKDXsxiEI9mhTAt9bT6hAnLv+a3njy3qaq0FjJUVvKBCRvVnPnu0CsR7zviNqTuS5U3lJgfubPjng7D9A0lMeF88mZw1CCIUwTpE43KS5ebaLDUNYD82fngEhhhYpLgLnDg7t/gqg5vBMrmr9csgXYLWYXk2cFne6i7cUyftMho8zgRr8v+eexMdkZEkWKeHR7ha8rex8pUUmmAbwMYI9X7d8lcvoDBl/3nkKqu6gyy2BCzEsS5Cm5KvTR6cpfiRZ3x24IGVuexJmu621QKrfe9EzT8OjCnVgX78MOxpsDajA7BgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECItOQEQ3v5xIgBhAbVd3be7ddpIiMEdYgBSoKlUM1phtNyc=" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2020-10-23T23:59:59.0000000+08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="StorageConnectionString" value="BlobEndpoint=https://xhst2.blob.core.chinacloudapi.cn/;QueueEndpoint=https://xhst2.queue.core.chinacloudapi.cn/;TableEndpoint=https://xhst2.table.core.chinacloudapi.cn/;AccountName=xhst2;AccountKey=o0fZ2FQlmvFXC+V7h/VRIAl3ORdeU4v82zoLJx7Eq2chlqk8gaSPQ+NvKQ/DZq0Qy3iSwIXjHuUbdEvkUoX0yQ==" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="E5DA47B7BC4FA41340E2425FDB47A33D9FFF6886" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
